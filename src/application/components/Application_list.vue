@@ -6,17 +6,23 @@
         <v-card-subtitle v-text="card.environment"></v-card-subtitle>
         <v-card-text>
           <div class="text--primary">
+            <div v-if="card.version != 'null'">
+              {{ card.version }}
+            </div>
             <div v-if="card.country != 'null'">
               {{ card.country }}
             </div>
-            <div v-if="card.datacenter != 'null'">
-              {{ card.datacenter }}
+            <div v-if="card.provider != 'null'">
+              {{ card.provider }}
             </div>
-            <div v-if="card.platform != 'null'">
-              {{ card.platform }}
+            <div v-if="card.project != 'null'">
+              {{ card.project }}
             </div>
             <div v-if="card.region != 'null'">
               {{ card.region }}
+            </div>
+            <div v-if="card.datacenter != 'null'">
+              {{ card.datacenter }}
             </div>
           </div>
         </v-card-text>
