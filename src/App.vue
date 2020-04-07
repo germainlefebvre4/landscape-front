@@ -1,30 +1,33 @@
 <template>
   <div id="app">
     <v-app id="inspire">
-    <v-row>
       <MyHeader />
-    </v-row>
-    <v-row>
-      <router-view></router-view>
-    </v-row>
-    <v-row>
+      <div class="content">
+        <router-view></router-view>
+      </div>
       <MyFooter />
-    </v-row>
     </v-app>
   </div>
 </template>
 
 <script>
-import MyHeader from './views/MyHeader.vue'
-import MyFooter from './views/MyFooter.vue'
+import MyHeader from "./views/MyHeader.vue";
+import MyFooter from "./views/MyFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     MyHeader,
-    MyFooter
-  }
+    MyFooter,
+  },
 };
 </script>
 
+<style lang="scss" scoped>
+.content {
+  padding-top: 72px;
+  height: calc(100vh - 72px);
+  overflow: auto;
+}
+</style>
