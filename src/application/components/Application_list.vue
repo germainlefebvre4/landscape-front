@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container fluid d-flex class="grid">
-      <v-card v-for="card in applications" :key="card.id" class="card">
+      <v-card v-for="card in applications.data" :key="card.id" class="card">
         <v-card-title v-text="card.name"></v-card-title>
         <v-card-subtitle v-text="card.environment"></v-card-subtitle>
         <v-card-text>
@@ -26,7 +26,6 @@
 </template>
 
 <script>
-// import axios from "axios";
 
 export default {
   name: "applicationList",
