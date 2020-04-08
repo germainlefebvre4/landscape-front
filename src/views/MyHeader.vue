@@ -1,8 +1,6 @@
 <template>
-  <v-app-bar app color="indigo" dark>
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-    <v-toolbar-title>Page title</v-toolbar-title>
+  <v-app-bar app color="light-blue" dark>
+    <v-toolbar-title>Landscape</v-toolbar-title>
 
     <v-spacer></v-spacer>
 
