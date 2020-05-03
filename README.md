@@ -1,4 +1,4 @@
-# nanny-front
+# lanscape-front
 
 ## Getting started
 ```
@@ -9,7 +9,7 @@ Delivers compiled files in dist/*
 ## Docker image
 Build docker image
 ```
-docker build -t germainlefebvre/nanny-front .
+docker build -t germainlefebvre/landscape-front .
 ```
 
 ## Project setup
